@@ -1,0 +1,132 @@
+https://codepen.io/jasonbringle/pen/abbVXqv?editors=1100
+
+    1. What is Semantic HTML? 
+Tags with meaning. Gives meaning to content.
+
+    2. What is HTML used for? 
+To mark content....assign it a name.
+
+    3. What is an attribute and where do we put it? 
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+Header tag.  Only use <h1> once on a page.
+
+    5. Name two tags that have required attributes
+
+    6. What do we put in the head of our HTML document? 
+Metadata.... data about data.  <title>, <style>,<link>
+
+    7. What is an id? 
+A sector with higher specificity that a .class selector
+
+    8. What elements can I add an id to? 
+Any
+
+    9. How many times can I use the same id on a page? 
+Once
+
+    10. What is a class? 
+A selector that assigns attributes to HTML elements
+
+    11. What elements can I add a class to? 
+HTML
+
+    12. How many times can I use the same class on a page? 
+Multiple times
+
+    13. How do I get my link to open in a new tab?
+Add a target="_blank" attribute to the link in <a> tag.
+
+    14. What is the alt attribute used for? 
+To display an alternate piece of information if an omg cannot be displayed.
+
+    15. How do I reference an id?
+with a #
+
+    16. What is the difference between a section and a div
+Section assigns meaning to the separated content and groups it together.  A div assigns no meaning outside of what it is contained in it such as a .class.
+
+    17. What is CSS used for? 
+To add style.
+
+    18. How to we select an element? Example - every h2 on the page
+h2{}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+You can assign attributes to the same .classes multiple times but id's can only be assigned once to elements and only once on a page.
+
+You could use .class to assign color to some text and then another .class to assign a hover sudo-class to that same class.  An id will only be used once on a page so you could assign color, width, background only to that id as it is assigned only to that specific element....If you wanted a <h2>header</h2> to have an attribute that no other <h2>header</h2> has regardless of how h2{} element selectors in CSS are used then you'd assign it an id='fancy-header'  and then call it with #fancy-header.
+
+    20. How do we select classes in CSS?
+.class
+
+    21. How do we select a p element with a single class of “human””?
+.human
+    22. What is a parent child selector? When would this be useful? 
+It helps to denote the amount of specificity when calling an HTML tag.  It's useful when an element is inside (nested) inside another element.
+
+    23. How do you select all links within a div with the class of sidebar?
+.sidebar
+    24. What is a pseudo selector?
+a .class selector with an attribute... like hover:
+
+    25. What do we use the change the spacing between lines?
+line-height: 80%;
+
+    26. What do we use to change the spacing between letters?
+letter-spacing: 3px;
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+text-transform: lowercase etc;
+
+    28. How do I add a 1px border around my div that is dotted and black?
+border: 1px dotted black;
+
+    29. How do I select everything on the page? 
+* (wild card)
+
+    30. How do I write a comment in CSS?
+/*    */
+    31. How do I find out what file I am in, when I am using the command line? 
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+rm    doesn't not confirm wether you want to delete or not.
+
+    34. Why should I use version control? 
+To keep 
+    35. How often should I commit to github?
+Once every 20 mins.  Or often!
+
+    36. What is the command we would use to push our repo up to github? 
+git add commit -m “your commit message”
+
+    37. Walk me through Lambda's git flow. 
+1. Fork
+2. Add PM as a collaborator on Github
+3. cd into proper location on computer
+4. Clone forked repo (git clone "link of clone")
+5. cd "name of repo"
+6. branch the repo   git checkout -b firstname-lastname
+7. Open Vscode   code .
+8. Do work on code
+9. Save changes in vscode
+10. (Add) Save changes  git add .
+11. Commit   git add commit -m 'specific message'
+12. Push   git commit origin branch-name
+13.Go to GitHub  "Compare and pull request" (make sure you are on your fork ed repo)
+14.CHOOSE YOUR FORKED REPO AS YOUR BASE REPOSITORY!
+15. Add PM as a reviewer
+16. Create pull request.
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    2. What happens when an element is positioned absolutely? 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    5. In your own words, explain the box model. What is the fix for the box model? 
