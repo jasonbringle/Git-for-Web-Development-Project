@@ -7,17 +7,19 @@ Tags with meaning. Gives meaning to content.
 To mark content....assign it a name.
 
     3. What is an attribute and where do we put it? 
+Attributes provide additional information about an element.  We put them in the HTML tag.
 
     4. What is the h1 tag used for? How many times should I use it on a page?
 Header tag.  Only use <h1> once on a page.
 
     5. Name two tags that have required attributes
+<img>   and   <a>
 
     6. What do we put in the head of our HTML document? 
-Metadata.... data about data.  <title>, <style>,<link>
+CSS Reset
 
     7. What is an id? 
-A sector with higher specificity that a .class selector
+A selector with higher specificity than a .class selector
 
     8. What elements can I add an id to? 
 Any
@@ -38,18 +40,18 @@ Multiple times
 Add a target="_blank" attribute to the link in <a> tag.
 
     14. What is the alt attribute used for? 
-To display an alternate piece of information if an omg cannot be displayed.
+To display an alternate piece of information if an img cannot be displayed.
 
     15. How do I reference an id?
 with a #
 
     16. What is the difference between a section and a div
-Section assigns meaning to the separated content and groups it together.  A div assigns no meaning outside of what it is contained in it such as a .class.
+Section assigns meaning to the separated content and groups it together.  A div assigns no meaning outside of what is contained in it such as a .class.
 
     17. What is CSS used for? 
 To add style.
 
-    18. How to we select an element? Example - every h2 on the page
+    18. How do we select an element? Example - every h2 on the page
 h2{}
 
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
@@ -61,13 +63,16 @@ You could use .class to assign color to some text and then another .class to ass
     20. How do we select classes in CSS?
 .class
 
-    21. How do we select a p element with a single class of “human””?
-.human
+    21. How do we select a p element with a single class of “human”?
+.human{	
+    }
+
     22. What is a parent child selector? When would this be useful? 
 It helps to denote the amount of specificity when calling an HTML tag.  It's useful when an element is inside (nested) inside another element.
 
     23. How do you select all links within a div with the class of sidebar?
 .sidebar
+
     24. What is a pseudo selector?
 a .class selector with an attribute... like hover:
 
@@ -81,14 +86,23 @@ letter-spacing: 3px;
 text-transform: lowercase etc;
 
     28. How do I add a 1px border around my div that is dotted and black?
+/*HTML*/
+<div class= "divclass">
+/*HTML*/
+
+/*CSS*/
+.divclass{
 border: 1px dotted black;
+}
+/*CSS*/
 
     29. How do I select everything on the page? 
 * (wild card)
 
     30. How do I write a comment in CSS?
 /*    */
-    31. How do I find out what file I am in, when I am using the command line? 
+    31. How do I find out what file I am in, when I am using the command line?
+pwd 
 
     32. Using the command line - how do I see a list of files/folders in my current folder?
 ls
@@ -97,7 +111,8 @@ ls
 rm    doesn't not confirm wether you want to delete or not.
 
     34. Why should I use version control? 
-To keep 
+To keep track of and regulate changes to code.  In a team atmosphere it may be necessary when breaking out tasks to determine what breaks code so version control makes it easier to roll back code, added it and change it strategically so it will maintain its functionality.
+
     35. How often should I commit to github?
 Once every 20 mins.  Or often!
 
@@ -115,7 +130,7 @@ git add commit -m “your commit message”
 8. Do work on code
 9. Save changes in vscode
 10. (Add) Save changes  git add .
-11. Commit   git add commit -m 'specific message'
+11. Commit   git commit -m 'specific message'
 12. Push   git commit origin branch-name
 13.Go to GitHub  "Compare and pull request" (make sure you are on your fork ed repo)
 14.CHOOSE YOUR FORKED REPO AS YOUR BASE REPOSITORY!
